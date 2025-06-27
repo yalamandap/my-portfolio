@@ -48,7 +48,7 @@ const Navigation = () => {
   };
 
   const handleDownloadResume = () => {
-    console.log("Download resume clicked from nav");
+    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
   };
 
   return (

@@ -6,42 +6,48 @@ const Certifications = () => {
       provider: "HackerRank",
       icon: "☕",
       color: "from-orange-500 to-red-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/19KM5GOESaY7DGDOTluEgQJNdYTL2s_rp/view?usp=drive_link"
     },
     {
       title: "Python Basics",
       provider: "HackerRank",
       icon: "🐍",
       color: "from-blue-500 to-green-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/18AV0aThN85WtVhmWz417xJLrZ8TnV25y/view?usp=drive_link"
     },
     {
       title: "SAWIT.AI",
       provider: "GUVI",
       icon: "🤖",
       color: "from-purple-500 to-pink-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/1VrvychY966-39gC-VN_ionvCbSdihjXs/view?usp=drive_link"
     },
     {
       title: "FFE FLY Program",
       provider: "CMI",
       icon: "🚀",
       color: "from-indigo-500 to-purple-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/1a5OpojmHiLLEO6MIU0FUOuqEzBkeLnO3/view?usp=drive_link"
     },
     {
       title: "HTML",
       provider: "Great Learning",
       icon: "🌐",
       color: "from-orange-500 to-yellow-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/1T8YHQZl0UZ_VJVuweiXepVP1OlHhXsC6/view?usp=drive_link"
     },
     {
       title: "CSS & JavaScript",
-      provider: "Infosys",
+      provider: "Infosys Springboard",
       icon: "💻",
       color: "from-blue-500 to-purple-500",
-      verified: true
+      verified: true,
+      url: "https://drive.google.com/file/d/1lZZ7MGfVHvrV--ia9dbSgHRihxN9HEtW/view?usp=drive_link"
     }
   ];
 
@@ -62,6 +68,7 @@ const Certifications = () => {
               key={cert.title}
               className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-6 border border-blue-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => window.open(cert.url, '_blank')}
             >
               <div className="space-y-4">
                 {/* Header with icon and verification */}
@@ -85,7 +92,7 @@ const Certifications = () => {
                 </div>
 
                 {/* Badge/Button */}
-                <div className={`w-full py-2 px-4 rounded-lg bg-gradient-to-r ${cert.color} text-white text-center text-sm font-medium`}>
+                <div className={`w-full py-2 px-4 rounded-lg bg-gradient-to-r ${cert.color} text-white text-center text-sm font-medium hover:shadow-lg transition-shadow`}>
                   View Certificate
                 </div>
               </div>

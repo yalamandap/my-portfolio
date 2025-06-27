@@ -17,10 +17,20 @@ const Footer = () => {
               and building scalable applications. Currently interning at Amazon.
             </p>
             <div className="flex gap-4">
-              <Button variant="outline" size="icon" className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300"
+                onClick={() => window.open('https://github.com/sahithya-lakku', '_blank')}
+              >
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon" className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300"
+                onClick={() => window.open('https://www.linkedin.com/in/lakku-sahithya-023802248', '_blank')}
+              >
                 <Linkedin className="h-5 w-5" />
               </Button>
             </div>

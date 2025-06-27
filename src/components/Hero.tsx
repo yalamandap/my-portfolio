@@ -4,8 +4,8 @@ import { Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    // In a real implementation, this would trigger the download of the actual PDF
-    console.log("Download resume clicked");
+    // Link to the actual resume file
+    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
   };
 
   return (
@@ -38,11 +38,29 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: '0.8s' }}>
-              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
+                onClick={() => window.open('https://github.com/sahithya-lakku', '_blank')}
+              >
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon" className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
+                onClick={() => window.open('https://www.linkedin.com/in/lakku-sahithya-023802248', '_blank')}
+              >
                 <Linkedin className="h-5 w-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
+                onClick={() => window.open('https://www.hackerrank.com/profile/sahithyalakku', '_blank')}
+              >
+                <span className="text-sm font-bold">HR</span>
               </Button>
             </div>
 

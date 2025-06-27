@@ -3,15 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const Resume = () => {
   const handleDownloadResume = () => {
-    // In a real implementation, this would trigger the download of the actual PDF
-    console.log("Download resume clicked");
-    // You could use: window.open('/path-to-resume.pdf', '_blank');
+    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
   };
 
   const handleViewResume = () => {
-    // In a real implementation, this would open the PDF in a new tab
-    console.log("View resume clicked");
-    // You could use: window.open('/path-to-resume.pdf', '_blank');
+    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
   };
 
   return (
