@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'electric-blue': '#0066FF',
+				'deep-purple': '#6B46C1',
+				'neon-cyan': '#00D9FF',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'tech-gradient': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'hero-gradient': 'linear-gradient(135deg, #0066FF 0%, #6B46C1 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +97,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(0, 102, 255, 0.5)' },
+					'50%': { boxShadow: '0 0 30px rgba(0, 102, 255, 0.8)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.8', transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
