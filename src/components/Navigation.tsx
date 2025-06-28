@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -19,8 +18,7 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
+
       const sections = navItems.map(item => item.href.substring(1));
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
@@ -30,7 +28,7 @@ const Navigation = () => {
         }
         return false;
       });
-      
+
       if (currentSection) {
         setActiveSection(currentSection);
       }
@@ -48,7 +46,7 @@ const Navigation = () => {
   };
 
   const handleDownloadResume = () => {
-    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
+    window.open("https://drive.google.com/file/d/1qdz127USo58hWq-EwcqPB7pDYVWR8YLU/view?usp=sharing", "_blank");
   };
 
   return (
@@ -60,7 +58,10 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-bold text-xl gradient-text cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div 
+            className="font-bold text-xl gradient-text cursor-pointer" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             Sahithya Lakku
           </div>
 
@@ -95,7 +96,6 @@ const Navigation = () => {
             size="sm"
             className="md:hidden"
             onClick={() => {
-              // Simple mobile menu toggle (you could enhance this with a proper mobile menu)
               console.log("Mobile menu clicked");
             }}
           >
