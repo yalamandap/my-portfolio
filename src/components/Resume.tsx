@@ -1,13 +1,15 @@
-
 import { Button } from "@/components/ui/button";
 
 const Resume = () => {
-  const handleDownloadResume = () => {
-    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
-  };
+  const resumeDriveLink = "https://drive.google.com/file/d/1qdz127USo58hWq-EwcqPB7pDYVWR8YLU/view?usp=sharing";
 
   const handleViewResume = () => {
-    window.open('/Lakku_Sahithya_Resume_Final.pdf', '_blank');
+    window.open(resumeDriveLink, "_blank");
+  };
+
+  const handleDownloadResume = () => {
+    // Optional: redirect to a direct download link if available.
+    window.open(resumeDriveLink, "_blank");
   };
 
   return (
@@ -31,32 +33,32 @@ const Resume = () => {
                       sahithyalakku1234@gmail.com | +91 85005088883 | Amaravati, Andhra Pradesh
                     </p>
                   </div>
-                  
+
                   <div className="h-px bg-gray-200 my-4"></div>
-                  
+
                   <div className="text-left space-y-3 text-sm">
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">EDUCATION</h4>
                       <p className="text-muted-foreground">
-                        <strong>B.Tech in Computer Science Engineering</strong> - VIT-AP University (2023-2027)<br/>
+                        <strong>B.Tech in Computer Science Engineering</strong> - VIT-AP University (2023-2027)<br />
                         CGPA: 8.66
                       </p>
                     </div>
-                    
+
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">EXPERIENCE</h4>
                       <p className="text-muted-foreground">
-                        <strong>SDE Intern</strong> - Amazon, Bangalore (May 2025 - July 2025)<br/>
+                        <strong>SDE Intern</strong> - Amazon, Bangalore (May 2025 - July 2025)<br />
                         Contributed to scalable system components and backend APIs.
                       </p>
                     </div>
-                    
+
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">TECHNICAL SKILLS</h4>
                       <p className="text-muted-foreground">
-                        Languages: Python, Java, SQL, JavaScript, C++<br/>
-                        Frontend: React.js, HTML, CSS, Angular<br/>
-                        Databases: MongoDB, MySQL<br/>
+                        Languages: Python, Java, SQL, JavaScript, C++<br />
+                        Frontend: React.js, HTML, CSS, Angular<br />
+                        Databases: MongoDB, MySQL<br />
                         Tools: Git, GitHub, VS Code
                       </p>
                     </div>
@@ -66,7 +68,7 @@ const Resume = () => {
 
               {/* Action buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
+                <Button
                   onClick={handleViewResume}
                   variant="outline"
                   size="lg"
@@ -74,7 +76,7 @@ const Resume = () => {
                 >
                   👁️ View Resume
                 </Button>
-                <Button 
+                <Button
                   onClick={handleDownloadResume}
                   size="lg"
                   className="bg-hero-gradient hover:shadow-lg hover:shadow-electric-blue/25 transition-all duration-300 text-white"
@@ -95,3 +97,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
