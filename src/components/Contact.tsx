@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -27,17 +26,16 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate email sending (in real implementation, integrate with EmailJS or backend)
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       console.log("Form submitted:", formData);
       console.log("Email would be sent to: sahithyalakku1234@gmail.com");
-      
+
       toast({
         title: "Message Sent!",
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
-      
+
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       toast({
@@ -107,12 +105,32 @@ const Contact = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-foreground">Follow Me</h4>
               <div className="flex gap-4">
-                <Button variant="outline" size="lg" className="hover:bg-electric-blue hover:text-white hover:border-electric-blue transition-all duration-300">
-                  LinkedIn
-                </Button>
-                <Button variant="outline" size="lg" className="hover:bg-deep-purple hover:text-white hover:border-deep-purple transition-all duration-300">
-                  GitHub
-                </Button>
+                <a
+                  href="https://www.linkedin.com/in/lakku-sahithya-023802248/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="hover:bg-electric-blue hover:text-white hover:border-electric-blue transition-all duration-300"
+                  >
+                    LinkedIn
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/sahithya-lakku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="hover:bg-deep-purple hover:text-white hover:border-deep-purple transition-all duration-300"
+                  >
+                    GitHub
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -184,3 +202,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
