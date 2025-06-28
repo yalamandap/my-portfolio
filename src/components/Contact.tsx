@@ -90,15 +90,33 @@ const Contact = () => {
 
             {/* Contact details */}
             <div className="space-y-4">
-              {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300">
-                  <div className="text-2xl">{info.icon}</div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">{info.label}</p>
-                    <p className="font-medium text-foreground">{info.value}</p>
+              {contactInfo.map((info, index) => {
+                const isEmail = info.label === "Email";
+                const isPhone = info.label === "Phone";
+                const href = isEmail
+                  ? `mailto:${info.value}`
+                  : isPhone
+                  ? `tel:${info.value}`
+                  : undefined;
+
+                const content = (
+                  <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300">
+                    <div className="text-2xl">{info.icon}</div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="font-medium text-foreground">{info.value}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+
+                return href ? (
+                  <a key={index} href={href} className="block" target="_blank" rel="noopener noreferrer">
+                    {content}
+                  </a>
+                ) : (
+                  <div key={index}>{content}</div>
+                );
+              })}
             </div>
 
             {/* Social links */}
@@ -202,4 +220,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
