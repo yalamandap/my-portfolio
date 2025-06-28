@@ -81,7 +81,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-hero-gradient p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://i.ibb.co/0yKxSMsM/sahiiii.jpg" 
+                    src="https://i.postimg.cc/FFxTfjN7/sahiiii.jpg" 
                     alt="Sahithya Lakku" 
                     className="w-full h-full object-cover rounded-full"
                   />
