@@ -1,18 +1,17 @@
-
 const About = () => {
   const education = [
     {
-      degree: "B.Tech in Computer Science Engineering",
-      institution: "VIT-AP University",
-      period: "2023 – 2027",
-      grade: "CGPA: 8.66",
+      degree: "B.Tech in Information Technology",
+      institution: "Narasaraopeta Engineering College",
+      period: "2022 – 2026",
+      grade: "CGPA: 8.55",
       icon: "🎓"
     },
     {
       degree: "Intermediate (MPC)",
-      institution: "Srinivasa Junior College",
-      period: "2021 – 2023",
-      grade: "98%",
+      institution: "Government Junior College, Martur",
+      period: "2020 – 2022",
+      grade: "84%",
       icon: "🏫"
     }
   ];
@@ -30,22 +29,34 @@ const About = () => {
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate and fast-learning full stack developer from Andhra Pradesh, currently pursuing 
-              B.Tech in Computer Science at VIT-AP University. With experience in scalable system development 
-              through my internship at Amazon, and hands-on experience in React.js, Java, and databases, 
-              I enjoy building things that live on the web.
+              B.Tech in Information Technology at Narasaraopeta Engineering College. I’ve completed training in 
+              Generative AI through the Intel Unnati program and built several full stack projects using 
+              Firebase, React.js, Python, and Node.js. I love turning ideas into working applications 
+              that solve real-world problems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in technology is driven by curiosity and a desire to solve real-world problems 
-              through innovative solutions. I'm always eager to learn new technologies and take on 
-              challenging projects that push my boundaries.
+              I'm constantly exploring new technologies and improving my skills through hands-on coding, 
+              open-source contributions, and real-time applications. I believe in building for impact — 
+              and I aim to grow as a developer who crafts elegant, scalable, and accessible digital solutions.
             </p>
+            <a
+              href="https://drive.google.com/file/d/1WS2HakBCnRkG9jvjLkcShzlajP36z7xp/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-white bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3 rounded-full hover:shadow-lg transition-all"
+            >
+              📄 View My Resume
+            </a>
           </div>
 
           {/* Education timeline */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">Education</h3>
             {education.map((edu, index) => (
-              <div key={index} className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100 hover:shadow-lg transition-all duration-300">
+              <div
+                key={index}
+                className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100 hover:shadow-lg transition-all duration-300"
+              >
                 <div className="flex items-start gap-4">
                   <div className="text-3xl">{edu.icon}</div>
                   <div className="flex-1">
@@ -67,3 +78,4 @@ const About = () => {
 };
 
 export default About;
+
