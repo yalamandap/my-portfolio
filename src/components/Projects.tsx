@@ -1,31 +1,30 @@
-
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Bank Management System",
-      description: "A comprehensive CLI application built with Java and MySQL for managing bank accounts, processing transactions, and maintaining customer records.",
-      tech: ["Java", "MySQL", "CLI"],
-      features: ["Account Creation", "Transaction Management", "Balance Inquiry", "Customer Records"],
-      githubUrl: "https://github.com/sahithya-lakku/Bank-Management-System",
-      color: "from-blue-500 to-purple-500"
+      title: "Spam Email Detection using Machine Learning",
+      description: "A machine learning project that classifies emails as spam or not using Natural Language Processing and classification algorithms.",
+      tech: ["Python", "Pandas", "Sklearn"],
+      features: ["Text Preprocessing", "TF-IDF Vectorization", "Naive Bayes Model", "Accuracy Evaluation"],
+      githubUrl: "https://github.com/yalamandap/E-mail-Spam-detection",
+      color: "from-indigo-500 to-purple-500"
     },
     {
-      title: "Snake Game (Java Swing)",
-      description: "Interactive Java-based snake game featuring smooth gameplay, live scoring system, and intuitive controls built with Swing framework.",
-      tech: ["Java", "Swing", "GUI"],
-      features: ["Real-time Scoring", "Smooth Gameplay", "Collision Detection", "Game State Management"],
-      githubUrl: "https://github.com/sahithya-lakku/Snake_Game_Project",
-      color: "from-green-500 to-teal-500"
+      title: "Employee Management System using Firebase",
+      description: "A full-stack employee manager built with Firebase Realtime DB for handling employee records, add/delete functionality, and authentication.",
+      tech: ["React", "Firebase", "CSS"],
+      features: ["CRUD Operations", "Real-time Sync", "Firebase Auth", "Modular Design"],
+      githubUrl: "https://github.com/yalamandap/employee_management",
+      color: "from-green-500 to-emerald-500"
     },
     {
-      title: "Arduino Footstep Power Generator",
-      description: "Innovative hardware-software solution that converts mechanical pressure from footsteps into electrical energy using Arduino microcontroller.",
-      tech: ["Arduino", "C++", "Hardware"],
-      features: ["Pressure Sensing", "Energy Conversion", "Real-time Monitoring", "Sustainable Technology"],
-      githubUrl: "https://github.com/sahithya-lakku",
+      title: "OLX Car Cover Scraper",
+      description: "Web scraper that extracts car cover listings from OLX and stores structured information using BeautifulSoup and Python.",
+      tech: ["Python", "BeautifulSoup", "Web Scraping"],
+      features: ["Data Extraction", "HTML Parsing", "Search Automation", "CSV Export"],
+      githubUrl: "https://github.com/yalamandap/OLX_scraper",
       color: "from-yellow-500 to-orange-500"
     }
   ];
@@ -50,7 +49,7 @@ const Projects = () => {
             >
               {/* Project header with gradient */}
               <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
-              
+
               <div className="p-6 space-y-4">
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
@@ -110,7 +109,7 @@ const Projects = () => {
             variant="outline" 
             size="lg"
             className="hover:bg-hero-gradient hover:text-white hover:border-transparent transition-all duration-300"
-            onClick={() => window.open('https://github.com/sahithya-lakku', '_blank')}
+            onClick={() => window.open('https://github.com/yalamandap', '_blank')}
           >
             <Github className="w-5 h-5 mr-2" />
             View All Projects on GitHub
