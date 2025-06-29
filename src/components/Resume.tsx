@@ -1,14 +1,13 @@
 import { Button } from "@/components/ui/button";
 
 const Resume = () => {
-  const resumeDriveLink = "https://drive.google.com/file/d/1qdz127USo58hWq-EwcqPB7pDYVWR8YLU/view?usp=sharing";
+  const resumeDriveLink = "https://drive.google.com/file/d/1WS2HakBCnRkG9jvjLkcShzlajP36z7xp/view?usp=drive_link";
 
   const handleViewResume = () => {
     window.open(resumeDriveLink, "_blank");
   };
 
   const handleDownloadResume = () => {
-    // Optional: redirect to a direct download link if available.
     window.open(resumeDriveLink, "_blank");
   };
 
@@ -27,10 +26,10 @@ const Resume = () => {
               <div className="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-2xl border border-gray-200">
                 <div className="space-y-4">
                   <div className="text-center space-y-2">
-                    <h3 className="text-2xl font-bold text-foreground">Sahithya Lakku</h3>
-                    <p className="text-electric-blue font-medium">Full Stack Developer | SDE Intern @Amazon</p>
+                    <h3 className="text-2xl font-bold text-foreground">Yalamanda Rao Papana</h3>
+                    <p className="text-electric-blue font-medium">Full Stack Developer | Generative AI Trainee @Intel Unnati</p>
                     <p className="text-muted-foreground text-sm">
-                      sahithyalakku1234@gmail.com | +91 85005088883 | Amaravati, Andhra Pradesh
+                      yalamandap6@gmail.com | +91 6301932724 | Martur, Andhra Pradesh
                     </p>
                   </div>
 
@@ -40,26 +39,27 @@ const Resume = () => {
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">EDUCATION</h4>
                       <p className="text-muted-foreground">
-                        <strong>B.Tech in Computer Science Engineering</strong> - VIT-AP University (2023-2027)<br />
-                        CGPA: 8.66
+                        <strong>B.Tech in Information Technology</strong> - Narasaraopeta Engineering College (Expected 2026)<br />
+                        Current Student
                       </p>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">EXPERIENCE</h4>
                       <p className="text-muted-foreground">
-                        <strong>SDE Intern</strong> - Amazon, Bangalore (May 2025 - July 2025)<br />
-                        Contributed to scalable system components and backend APIs.
+                        <strong>Intel Unnati Generative AI Program</strong> (Mar 2025 - May 2025)<br />
+                        Industrial training focused on NLP, transformers, and generative AI models.
                       </p>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-foreground mb-2">TECHNICAL SKILLS</h4>
                       <p className="text-muted-foreground">
-                        Languages: Python, Java, SQL, JavaScript, C++<br />
-                        Frontend: React.js, HTML, CSS, Angular<br />
-                        Databases: MongoDB, MySQL<br />
-                        Tools: Git, GitHub, VS Code
+                        Languages: Python, Java, JavaScript, SQL, C++<br />
+                        Frontend: React.js, HTML, CSS, Next.js<br />
+                        Backend: Node.js, Express<br />
+                        Database: Firebase Firestore, MySQL<br />
+                        Tools: Git, GitHub, VS Code, Postman, Colab
                       </p>
                     </div>
                   </div>
@@ -97,4 +97,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
