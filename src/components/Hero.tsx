@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
-  const resumeDriveLink = "https://drive.google.com/file/d/1qdz127USo58hWq-EwcqPB7pDYVWR8YLU/view?usp=sharing";
+  const resumeDriveLink = "https://drive.google.com/file/d/1WS2HakBCnRkG9jvjLkcShzlajP36z7xp/view?usp=drive_link";
 
   const handleDownloadResume = () => {
     window.open(resumeDriveLink, "_blank");
@@ -23,17 +23,15 @@ const Hero = () => {
             <div className="space-y-2">
               <p className="text-lg text-muted-foreground animate-fade-in">Hi, I'm</p>
               <h1 className="text-5xl lg:text-6xl font-bold gradient-text animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                Sahithya Lakku
+                Yalamanda Rao Papana
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.4s" }}>
-                <span className="block">SDE Intern @Amazon</span>
                 <span className="block font-medium text-foreground">Full Stack Developer</span>
               </div>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-2xl animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              Passionate Computer Science student with hands-on experience in scalable system development, 
-              React.js, Java, and databases. I enjoy building things that live on the web.
+              Passionate IT student specializing in full stack web development, Generative AI, and cloud integration. I enjoy building impactful and scalable web applications.
             </p>
 
             {/* Social Links */}
@@ -42,7 +40,7 @@ const Hero = () => {
                 variant="outline" 
                 size="icon" 
                 className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
-                onClick={() => window.open("https://github.com/sahithya-lakku", "_blank")}
+                onClick={() => window.open("https://github.com/yalamandap", "_blank")}
               >
                 <Github className="h-5 w-5" />
               </Button>
@@ -50,7 +48,7 @@ const Hero = () => {
                 variant="outline" 
                 size="icon" 
                 className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
-                onClick={() => window.open("https://www.linkedin.com/in/lakku-sahithya-023802248", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/yalamanda-rao-papana-5309b9284", "_blank")}
               >
                 <Linkedin className="h-5 w-5" />
               </Button>
@@ -58,7 +56,7 @@ const Hero = () => {
                 variant="outline" 
                 size="icon" 
                 className="hover:scale-110 transition-transform hover:border-electric-blue hover:text-electric-blue"
-                onClick={() => window.open("https://www.hackerrank.com/profile/sahithyalakku", "_blank")}
+                onClick={() => window.open("https://www.hackerrank.com/profile/yalamandap6", "_blank")}
               >
                 <span className="text-sm font-bold">HR</span>
               </Button>
@@ -81,8 +79,8 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-hero-gradient p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://i.postimg.cc/FFxTfjN7/sahiiii.jpg" 
-                    alt="Sahithya Lakku" 
+                    src="https://i.postimg.cc/FFxTfjN7/sahiiii.jpg"  // Replace with your own hosted profile image if needed
+                    alt="Yalamanda Rao Papana" 
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
@@ -99,3 +97,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
