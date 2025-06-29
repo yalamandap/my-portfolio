@@ -1,4 +1,3 @@
-
 import { Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,17 +10,17 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold gradient-text">Sahithya Lakku</h3>
+            <h3 className="text-2xl font-bold gradient-text">Yalamanda Rao Papana</h3>
             <p className="text-gray-300 leading-relaxed">
-              Full Stack Developer passionate about creating innovative solutions 
-              and building scalable applications. Currently interning at Amazon.
+              Full Stack Developer passionate about creating innovative web solutions 
+              with a strong foundation in AI, Firebase, and modern JavaScript stacks.
             </p>
             <div className="flex gap-4">
               <Button 
                 variant="outline" 
                 size="icon" 
                 className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300"
-                onClick={() => window.open('https://github.com/sahithya-lakku', '_blank')}
+                onClick={() => window.open('https://github.com/yalamandap', '_blank')}
               >
                 <Github className="h-5 w-5" />
               </Button>
@@ -29,7 +28,7 @@ const Footer = () => {
                 variant="outline" 
                 size="icon" 
                 className="border-gray-600 hover:border-electric-blue hover:bg-electric-blue transition-all duration-300"
-                onClick={() => window.open('https://www.linkedin.com/in/lakku-sahithya-023802248', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/yalamanda-rao-papana-5309b9284', '_blank')}
               >
                 <Linkedin className="h-5 w-5" />
               </Button>
@@ -65,15 +64,15 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <p className="flex items-center gap-2">
                 <span>📧</span>
-                sahithyalakku1234@gmail.com
+                yalamandap6@gmail.com
               </p>
               <p className="flex items-center gap-2">
                 <span>☎️</span>
-                +91 85005088883
+                +91 6301932724
               </p>
               <p className="flex items-center gap-2">
                 <span>📍</span>
-                Amaravati, Andhra Pradesh
+                Martur, Andhra Pradesh
               </p>
             </div>
           </div>
@@ -83,7 +82,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Sahithya Lakku. All rights reserved.
+              © {currentYear} Yalamanda Rao Papana. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
               Built with React, TypeScript & Tailwind CSS
@@ -96,3 +95,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
