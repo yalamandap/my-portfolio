@@ -46,7 +46,7 @@ const Navigation = () => {
   };
 
   const handleDownloadResume = () => {
-    window.open("https://drive.google.com/file/d/1qdz127USo58hWq-EwcqPB7pDYVWR8YLU/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1WS2HakBCnRkG9jvjLkcShzlajP36z7xp/view?usp=drive_link", "_blank");
   };
 
   return (
@@ -62,7 +62,7 @@ const Navigation = () => {
             className="font-bold text-xl gradient-text cursor-pointer" 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            Sahithya Lakku
+            Yalamanda Rao Papana
           </div>
 
           {/* Desktop Navigation */}
@@ -74,7 +74,7 @@ const Navigation = () => {
                 className={`text-sm font-medium transition-colors duration-200 hover:text-electric-blue ${
                   activeSection === item.href.substring(1) 
                     ? "text-electric-blue" 
-                    : isScrolled ? "text-foreground" : "text-foreground"
+                    : "text-foreground"
                 }`}
               >
                 {item.name}
