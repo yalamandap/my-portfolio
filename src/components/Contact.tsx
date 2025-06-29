@@ -29,7 +29,7 @@ const Contact = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       console.log("Form submitted:", formData);
-      console.log("Email would be sent to: sahithyalakku1234@gmail.com");
+      console.log("Email would be sent to: yalamandap6@gmail.com");
 
       toast({
         title: "Message Sent!",
@@ -52,17 +52,17 @@ const Contact = () => {
     {
       icon: "📍",
       label: "Location",
-      value: "Amaravati, Andhra Pradesh"
+      value: "Martur, Andhra Pradesh"
     },
     {
       icon: "📧",
       label: "Email",
-      value: "sahithyalakku1234@gmail.com"
+      value: "yalamandap6@gmail.com"
     },
     {
       icon: "☎️",
       label: "Phone",
-      value: "+91 85005088883"
+      value: "+91 6301932724"
     }
   ];
 
@@ -124,7 +124,7 @@ const Contact = () => {
               <h4 className="font-semibold text-foreground">Follow Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://www.linkedin.com/in/lakku-sahithya-023802248/"
+                  href="https://www.linkedin.com/in/yalamanda-rao-papana-5309b9284"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -137,7 +137,7 @@ const Contact = () => {
                   </Button>
                 </a>
                 <a
-                  href="https://github.com/sahithya-lakku"
+                  href="https://github.com/yalamandap"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -220,5 +220,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
