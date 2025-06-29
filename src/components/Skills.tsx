@@ -1,29 +1,28 @@
-
 const Skills = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["Python", "Java", "R", "SQL", "C++", "C"],
+      skills: ["Python", "Java", "JavaScript", "SQL", "C++"],
       color: "from-blue-500 to-purple-500"
     },
     {
       title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "React.js"],
+      skills: ["HTML", "CSS", "React.js", "Next.js", "Tailwind CSS"],
       color: "from-green-500 to-teal-500"
     },
     {
-      title: "Frameworks",
-      skills: ["Angular"],
+      title: "Backend & Frameworks",
+      skills: ["Node.js", "Express.js"],
       color: "from-red-500 to-pink-500"
     },
     {
       title: "Databases",
-      skills: ["MongoDB", "MySQL"],
+      skills: ["Firebase Firestore", "MySQL"],
       color: "from-yellow-500 to-orange-500"
     },
     {
-      title: "Tools",
-      skills: ["Git", "GitHub", "VS Code", "Google Colab"],
+      title: "Tools & Platforms",
+      skills: ["Git", "GitHub", "VS Code", "Postman", "Google Colab"],
       color: "from-indigo-500 to-purple-500"
     }
   ];
@@ -48,7 +47,7 @@ const Skills = () => {
                   <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${category.color}`}></div>
                   <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <span 
@@ -69,14 +68,14 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold mb-8 text-foreground">Core Competencies</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Full Stack Development",
-              "System Design",
-              "Problem Solving",
-              "Agile Development",
-              "API Development",
+              "Full Stack Web Development",
+              "API Integration",
               "Database Design",
+              "Authentication & Authorization",
+              "Responsive Design",
               "Performance Optimization",
-              "Code Review"
+              "Problem Solving",
+              "Clean Code Practices"
             ].map((competency) => (
               <span 
                 key={competency} 
@@ -93,3 +92,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
