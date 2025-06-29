@@ -1,53 +1,84 @@
-
 const Certifications = () => {
   const certifications = [
     {
-      title: "Java Basics",
+      title: "Software Engineer",
       provider: "HackerRank",
-      icon: "☕",
-      color: "from-orange-500 to-red-500",
+      icon: "💼",
+      color: "from-green-500 to-emerald-500",
       verified: true,
-      url: "https://drive.google.com/file/d/19KM5GOESaY7DGDOTluEgQJNdYTL2s_rp/view?usp=drive_link"
+      url: "https://www.hackerrank.com/certificates/iframe/14f5c2b29682"
     },
     {
-      title: "Python Basics",
-      provider: "HackerRank",
+      title: "Intel Unnati Industrial Training",
+      provider: "Intel",
+      icon: "🧠",
+      color: "from-blue-600 to-indigo-600",
+      verified: true,
+      url: "https://drive.google.com/drive/folders/10irM3SxNSOCqmPHWc63ErCQ1R2lG_cHt"
+    },
+    {
+      title: "Basics of Python",
+      provider: "Infosys Springboard",
       icon: "🐍",
-      color: "from-blue-500 to-green-500",
+      color: "from-yellow-500 to-orange-500",
       verified: true,
-      url: "https://drive.google.com/file/d/18AV0aThN85WtVhmWz417xJLrZ8TnV25y/view?usp=drive_link"
+      url: "https://drive.google.com/drive/folders/10irM3SxNSOCqmPHWc63ErCQ1R2lG_cHt"
     },
     {
-      title: "SAWIT.AI",
-      provider: "GUVI",
-      icon: "🤖",
+      title: "Data Science",
+      provider: "edX – Harvard University",
+      icon: "📊",
       color: "from-purple-500 to-pink-500",
       verified: true,
-      url: "https://drive.google.com/file/d/1VrvychY966-39gC-VN_ionvCbSdihjXs/view?usp=drive_link"
+      url: "https://drive.google.com/file/d/1Frvu0jexOWwVgG1iRtWZ7aMieuhmm-Td/view?usp=drive_link"
     },
     {
-      title: "FFE FLY Program",
-      provider: "CMI",
-      icon: "🚀",
-      color: "from-indigo-500 to-purple-500",
+      title: "Career Edge – Young Professional",
+      provider: "TCS iON",
+      icon: "🏢",
+      color: "from-red-500 to-rose-500",
       verified: true,
-      url: "https://drive.google.com/file/d/1a5OpojmHiLLEO6MIU0FUOuqEzBkeLnO3/view?usp=drive_link"
+      url: "https://drive.google.com/file/d/1-DErERMy9Gc4pWE1cLtAJNTPoHsmGw_Q/view?usp=drive_link"
     },
     {
-      title: "HTML",
-      provider: "Great Learning",
-      icon: "🌐",
-      color: "from-orange-500 to-yellow-500",
+      title: "Spring Boot Course",
+      provider: "Scaler",
+      icon: "🌱",
+      color: "from-teal-500 to-blue-500",
       verified: true,
-      url: "https://drive.google.com/file/d/1T8YHQZl0UZ_VJVuweiXepVP1OlHhXsC6/view?usp=drive_link"
+      url: "https://drive.google.com/drive/folders/10irM3SxNSOCqmPHWc63ErCQ1R2lG_cHt"
     },
     {
-      title: "CSS & JavaScript",
-      provider: "Infosys Springboard",
-      icon: "💻",
-      color: "from-blue-500 to-purple-500",
+      title: "Cybersecurity Analyst",
+      provider: "TATA",
+      icon: "🔐",
+      color: "from-gray-500 to-black",
       verified: true,
-      url: "https://drive.google.com/file/d/1lZZ7MGfVHvrV--ia9dbSgHRihxN9HEtW/view?usp=drive_link"
+      url: "https://drive.google.com/file/d/1EAckhArcwDkQIrez1oQdhbOnyFCHqUz7/view?usp=drive_link"
+    },
+    {
+      title: "The Joy of Computing using Python",
+      provider: "NPTEL",
+      icon: "📚",
+      color: "from-orange-400 to-pink-400",
+      verified: true,
+      url: "https://drive.google.com/file/d/1dAniALnuer5ss6rKIyLDtkupC8TEp6MF/view?usp=drive_link"
+    },
+    {
+      title: "SQL Advanced",
+      provider: "HackerRank",
+      icon: "🗃️",
+      color: "from-cyan-500 to-blue-500",
+      verified: true,
+      url: "https://www.hackerrank.com/certificates/iframe/a3d81cf8b2d1"
+    },
+    {
+      title: "Software Engineering Simulation",
+      provider: "Accenture",
+      icon: "🧑‍💻",
+      color: "from-fuchsia-500 to-purple-600",
+      verified: true,
+      url: "https://www.linkedin.com/in/yalamanda-rao-papana-5309b9284/overlay/1747925524188/single-media-viewer/?profileId=ACoAAEU0JrQB7vliGQIqooyCLA0LvKOvysw4AW0"
     }
   ];
 
