@@ -79,7 +79,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-hero-gradient p-1 animate-glow">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://i.postimg.cc/FFxTfjN7/sahiiii.jpg"  // Replace with your own hosted profile image if needed
+                    src="https://i.postimg.cc/LX9YXgSx/mypic.jpg"  // Replace with your own hosted profile image if needed
                     alt="Yalamanda Rao Papana" 
                     className="w-full h-full object-cover rounded-full"
                   />
